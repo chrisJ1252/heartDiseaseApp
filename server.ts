@@ -14,7 +14,7 @@ app.use('/predict', predictionRoutes)
 
 // define a route that listens for get request on the root url '/'
 app.get('/', (req, res) =>{
-    res.send('Heart Disease Prediction API')
+    res.send('Heart Disease Prediction API') 
 })
 
 app.listen(port, () => {
