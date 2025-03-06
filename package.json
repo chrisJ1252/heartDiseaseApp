@@ -9,10 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-    "@tensorflow/tfjs-node": "^4.22.0",
-=======
->>>>>>> a226127ba0e9e1720574610b4617a6383fe7441d
     "cors": "^2.8.5",
     "express": "^4.21.2"
   }
