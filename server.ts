@@ -1,22 +1,7 @@
-import express from 'express'; // import express module 
-import cors from 'cors';
-import predictionRoutes from './routes/predictionRoutes';
+import app from './app';
 
-const app = express() // create instance of express application 
-const port = 3000
+const PORT = process.env.PORT || 3001;
 
-// Middleware 
-app.use(cors())
-app.use(express.json()) // for parsing Json request bodies 
-
-// Routes
-app.use('/predict', predictionRoutes)
-
-// define a route that listens for get request on the root url '/'
-app.get('/', (req, res) =>{
-    res.send('Heart Disease Prediction API') 
-})
-
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`)
-})
+app.listen(PORT, () => {
+    console.log(`Server running on port http://localhost:${PORT}`);
+});
