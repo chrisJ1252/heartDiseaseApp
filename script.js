@@ -49,7 +49,7 @@ async function predict() {
 
     // Show the result
     const resultElement = document.getElementById("result");
-    if (result.prediction === 1) {
+    if (result.prediction >= .5 && result.prediction !== 0) {
         resultElement.innerHTML = "High risk of heart disease!";
     } else {
         resultElement.innerHTML = "Low risk of heart disease!";
